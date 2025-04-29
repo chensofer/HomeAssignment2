@@ -132,7 +132,11 @@
     .hero-image .profile-img {
         width: 220px;
         height: 220px;
-    }   
+    } 
+    
+    .cta-section {
+        flex-direction: column;
+    }
   }
 
   .name {
@@ -251,4 +255,96 @@
       font-size: 20px;
     }
   }
+
+  .cta-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 17px;
+  }
+  
+  .cta-column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 12px;
+  }
+  
+  .contact-info a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .projects h2 {
+    margin-bottom: 20px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .project-card h3 {
+    margin-top: 15px;
+  }
+  
+  .project-card p {
+    margin: 10px 0;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #b7678a;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 767px) {
+    .cta-section {
+      flex-direction: column;
+    }
+  }
+
+  .contact-info i {
+    margin-right: 10px;
+    color: #89596d;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  
+
+  
+
+  
+  
+  
   
