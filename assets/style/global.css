@@ -1,20 +1,23 @@
-body, html {
+ body, html {
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #F5F5F5;     
-  color: #222222;            
-  font-family: 'Segoe UI', sans-serif; 
+    padding-top: 55px;
+    box-sizing: border-box;
+    color: #222222;            
+    font-family: 'Segoe UI', sans-serif; 
+    overflow-x: hidden;
+    background: linear-gradient(to top, #cbcdcd, #e2dede);
+
   }
   
  .main-header {
-    background: linear-gradient(to top, #88cdda, #f4c2c2, #ffe3f1);
+    background: linear-gradient(to top, #ffe3f1, #c0e6f7);
     height: 100px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
+    width: 100%;
   }
-
+  
   .main-nav {
     height: 100%;
     display: flex;
@@ -36,6 +39,12 @@ body, html {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    display: inline-block; 
+  }
+
+  .main-nav a:hover {
+    transform: scale(1.1); 
   }
   
   .main-nav a.active {
@@ -47,14 +56,22 @@ body, html {
   
   .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 32px;
+    background-color: #89596d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
     cursor: pointer;
-    background-color: #b7678a;
-
+    transition: background-color 0.3s;
+  }
+  
+  .menu-toggle:hover {
+    background-color: #5c2d43;
   }
   
   .main-footer {
-    background: linear-gradient(to top, #88cdda, #f4c2c2, #ffe3f1);
+    background: linear-gradient(to top, #ffe3f1, #c0e6f7);
     height: 100px;
     display: flex;
     align-items: center;
@@ -66,25 +83,56 @@ body, html {
   }
   
   @media (max-width: 767px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+      
     .main-nav ul {
-      display: none;
-      flex-direction: column;
-      background-color:#fcd6e8;
-      position: absolute;
-      top: 100px;
-      left: 0;
-      width: 100%;
-      gap: 18px;
-      margin-top: 10px;
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(#ffe3f1);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
     }
-  
+    
     .main-nav ul.show {
-      display: flex;
+        display: flex;
     }
-  
+    
     .menu-toggle {
-      display: block;
+        display: block;
     }
+    
+    .main-nav a {
+        display: block;
+        width: 100%;
+        word-wrap: break-word;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        
+    }
+    
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-image .profile-img {
+        width: 220px;
+        height: 220px;
+    }   
   }
 
   .name {
@@ -93,4 +141,114 @@ body, html {
     color: rgb(94, 88, 88);
   }
 
- 
+  .hero-flex {
+    background: linear-gradient(to top, #cbcdcd, #e2dede);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-image .profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .hero-hello {
+    font-size: 25px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 24px;
+  }
+  
+  .resume-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#b7678a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .resume-btn:hover {
+    background-color: #5c2d43;
+  }
+
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-flex {
+      flex-direction: row;
+      gap: 50px;
+      padding: 40px;
+    }
+  
+    .hero-image .profile-img {
+      width: 260px;
+      height: 260px;
+    }
+  
+    .main-nav ul {
+      gap: 40px;
+    }
+  
+    .main-nav {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-flex {
+      gap: 60px;
+      padding: 60px 50px;
+    }
+  
+    .hero-image .profile-img {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .main-nav {
+      font-size: 19px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .hero-flex {
+      gap: 80px;
+      padding: 80px 60px;
+    }
+  
+    .hero-image .profile-img {
+      width: 350px;
+      height: 350px;
+    }
+  
+    .main-nav {
+      font-size: 20px;
+    }
+  }
+  
