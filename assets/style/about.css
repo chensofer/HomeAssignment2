@@ -1,0 +1,20 @@
+.about-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #222222;
+  }
+  
