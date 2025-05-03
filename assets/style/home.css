@@ -153,7 +153,6 @@
 
   @media (max-width: 767px) {
    
-    
     .hero-flex {
         flex-direction: column;
         text-align: center;
@@ -210,17 +209,17 @@
     .project-card img {
         max-width: 350px;
     }
-
+   
     .cta-column.projects {
         border-top: 2px solid #4e086a;
         padding-top: 20px;
         margin-top: 20px;
-      }
+    }
 
       .cta-column.contact-info {
         border-right: none;
         padding-right: 0;
-      }
+    }
   }
 
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -235,7 +234,7 @@
     }
   
     .project-card img {
-        max-width: 280px;
+      max-width: 280px;
     }
   }
 
@@ -251,7 +250,7 @@
     }
   
     .project-card img {
-        max-width: 320px;
+      max-width: 320px;
     }
   }
 

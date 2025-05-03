@@ -6,7 +6,6 @@
     font-family: 'Segoe UI', sans-serif; 
     overflow-x: hidden;
     background: linear-gradient(to top, #cbcdcd, #e2dede);
-
   }
   
  .main-header {
@@ -89,71 +88,71 @@
   }
 
   
-  @media (max-width: 767px) {
-    .main-nav {
-        flex-direction: column;
-        align-items: center;
-    }
+ @media only screen and (max-width: 767px) {
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+ }
       
-    .main-nav ul {
-        display: none;
-        flex-direction: column;
-        background: linear-gradient(#ffe3f1);
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        gap: 10px;
-        padding: 10px;
-        margin: 0;
-    }
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(#ffe3f1);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+ }
     
-    .main-nav ul.show {
-        display: flex;
-    }
+  .main-nav ul.show {
+    display: flex;
+ }
     
-    .menu-toggle {
-        display: block;
-    }
+  .menu-toggle {
+    display: block;
+ }
     
-    .main-nav a {
-        display: block;
-        width: 100%;
-        word-wrap: break-word;
-        text-align: center;
-        padding: 10px;
-        font-size: 16px;
-    }
+  .main-nav a {
+    display: block;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+ }
     
-  }
+}
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-  
-    .main-nav ul {
-      gap: 40px;
-    }
-  
-    .main-nav {
-      font-size: 18px;
-    }
 
-  }
+  .main-nav ul {
+    gap: 40px;
+ }
+  
+  .main-nav {
+    font-size: 18px;
+ }
+
+}
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
   
-  
-    .main-nav {
-      font-size: 19px;
-    }
+  .main-nav {
+    font-size: 19px;
+ }
 
-  }
+}
   
   @media only screen and (min-width: 1200px) {
    
-    .main-nav {
-      font-size: 20px;
-    }
-
+  .main-nav {
+    font-size: 20px;
+ }
+}
    
 
 
@@ -164,4 +163,4 @@
   
   
   
-  
+ 
