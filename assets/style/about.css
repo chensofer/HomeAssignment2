@@ -30,65 +30,65 @@
 
 @media only screen and (max-width: 767px) {
 
- .about-section {
-    padding: 40px 20px;
+.about-section {
+   padding: 40px 20px;
  }
   
 .about-container {
-    padding: 30px 20px;
-    font-size: 1rem;
+   padding: 30px 20px;
+   font-size: 1rem;
  }
   
 .about-container h1 {
-    font-size: 28px;
+   font-size: 28px;
  }
 }
   
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 .about-section {
-    padding: 50px 30px;
+   padding: 50px 30px;
  }
   
 .about-container {
-    padding: 35px 30px;
-    font-size: 1.1rem;
+   padding: 35px 30px;
+   font-size: 1.1rem;
  }
   
 .about-container h1 {
-    font-size: 32px;
+   font-size: 32px;
  }
 }
   
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .about-section {
-    padding: 60px 40px;
+   padding: 60px 40px;
  }
   
 .about-container {
-    padding: 40px;
-    font-size: 1.15rem;
+   padding: 40px;
+   font-size: 1.15rem;
  }
   
 .about-container h1 {
-    font-size: 34px;
+   font-size: 34px;
  }
 }
   
 @media only screen and (min-width: 1200px) {
 
 .about-section {
-    padding: 80px 60px;
+   padding: 80px 60px;
  }
   
 .about-container {
-    padding: 50px;
-    font-size: 1.2rem;
+   padding: 50px;
+   font-size: 1.2rem;
  }
   
 .about-container h1 {
-    font-size: 36px;
+   font-size: 36px;
  }
 }
   
