@@ -2,7 +2,6 @@ function calculatePrice() {
     const siteType = document.getElementById('site-type').value;
     const pages = parseInt(document.getElementById('pages').value);
     const customDesign = document.querySelector('input[name="custom-design"]:checked');
-  
     const resultBox = document.getElementById('result');
   
     if (!siteType || isNaN(pages) || pages < 1 || pages > 10 || !customDesign) {
@@ -13,6 +12,7 @@ function calculatePrice() {
     }
   
     let basePrice = 0;
+
     switch (siteType) {
       case 'business':
         basePrice = 1000;
@@ -26,9 +26,7 @@ function calculatePrice() {
     }
   
     const extraPages = pages > 1 ? (pages - 1) * 200 : 0;
-  
     const customDesignPrice = customDesign.value === 'yes' ? 1000 : 0;
-  
     const totalPrice = basePrice + extraPages + customDesignPrice;
   
     resultBox.style.display = 'block';
