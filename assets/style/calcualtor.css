@@ -1,13 +1,4 @@
-
-  .calculator-section {
-    padding: 80px 20px;
-    background-color: #e3e6e6;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+ 
   .calculator-container {
     width: 100%;
     max-width: 1200px;
@@ -20,7 +11,7 @@
   .calculator-box {
     width: 100%;
     max-width: 600px;
-    background-color: #ffffff;
+    background-color:var(--main-box-color);
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -100,12 +91,12 @@
   
   .reset-btn {
     background-color: #999999;
-    color: #fff;
+    color:var( --white);
   }
   
   .calculate-btn {
-    background-color: #b7678a;
-    color: #fff;
+    background-color: var(--purple);
+    color: var( --white);
   }
   
   .reset-btn:hover {
@@ -127,95 +118,3 @@
     display: none;
   }
  
-  @media only screen and (max-width: 767px) {
-
-    .calculator-container {
-        padding: 0;
-        max-width: 90%;
-    }
-
-    .calculator-section {
-        padding: 40px 15px;
-    }
-
-    .calculator-box {
-        padding: 20px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .buttons button {
-        width: 100%; 
-    }
-    
-    .result-box {
-        font-size: 16px;
-        padding: 15px;
-    }
-}
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
-    .calculator-container {
-        padding: 30px;
-        max-width: 700px;
-    }
-
-    .calculator-section {
-        padding: 50px 20px;
-    }
-    
-    .calculator-box {
-        padding: 30px;
-    }
-
-    .result-box {
-        font-size: 17px;
-        padding: 20px;
-    }
-}
-    
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    
-    .calculator-container {
-        padding: 40px;
-        max-width: 900px;
-    }
-
-    .calculator-section {
-        padding: 60px 30px;
-    }
-    
-    .calculator-box {
-        padding: 40px;
-    }
-
-    .result-box {
-        font-size: 18px;
-        padding: 25px;
-    }
-}
-
-  @media only screen and (min-width: 1200px) {
-    
-    .calculator-container {
-        padding: 50px;
-        max-width: 1200px;
-    }
-
-    .calculator-section {
-        padding: 80px 40px;
-    }
-
-    .calculator-box {
-        padding: 50px;
-    }
-
-    .result-box {
-        font-size: 19px;
-        padding: 30px;
-    }
-}

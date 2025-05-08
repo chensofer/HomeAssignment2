@@ -1,4 +1,13 @@
-/* variables.css */
 :root {
-  --primary-color: #ffffff;
+  --main-box-color: #ffffff;
+  --backgrund-color:#e3e6e6;
+  --footer-header:linear-gradient(to top, #ffe3f1, #c0e6f7);
+  --white:#ffffff;
+  --black:#000000;
+  --purple: #89596d;
+  --background-dark:#3d3b3b;
+  --footer-header-dark:linear-gradient(to top, #454649, #283f4a);
+  --main-box-color-dark: #636363;
+  --purple-white: #b3b3b3;
+  --button:#3e3b3b;
 }

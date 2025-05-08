@@ -1,16 +1,16 @@
  
   body, html {
     margin: 0;
-    padding-top: 55px;
+    padding-top: 35px;
     box-sizing: border-box;
-    color: #222222;            
+    color: var( --black);           
     font-family: 'Segoe UI', sans-serif; 
     overflow-x: hidden;
-    background: #e3e6e6;
+    background: var( --backgrund-color);
   }
   
  .main-header {
-    background: linear-gradient(to top, #ffe3f1, #c0e6f7);
+    background: var( --footer-header);
     height: 100px;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@
   
   .main-nav a {
     text-decoration: none;
-    color: black;
+    color: var( --black);  
     font-weight: bold;
     transition: all 0.2s ease-in-out;
     display: inline-block; 
@@ -48,8 +48,8 @@
   }
   
   .main-nav a.active {
-    background-color: #89596d;
-    color: white;
+    background-color:var(--purple);
+    color: var( --white);  
     padding: 0.4px 12px;
     border-radius: 4px;
   }
@@ -57,8 +57,8 @@
   .menu-toggle {
     display: none;
     font-size: 18px;
-    background-color: #89596d;
-    color: white;
+    background-color:var(--purple);
+    color:var( --white);  
     padding: 5px 8px;
     border: none;
     cursor: pointer;
@@ -74,7 +74,7 @@
   }
   
   .main-footer {
-    background: linear-gradient(to top, #ffe3f1, #c0e6f7);
+    background: var( --footer-header);
     height: 100px;
     display: flex;
     align-items: center;
@@ -87,20 +87,28 @@
 
   .section-container {
     max-width: 800px;
-    background-color: #ffffff;
-    padding: 40px;
+    background-color: var(--main-box-color);
+    padding: 5px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
+    font-size: 17px;
     line-height: 1.6;
-    color: #222222;
   }
 
   .section-container h2,
   .calculator-container h2 {
     margin-bottom: 20px;
-    color: #89596d;
-    font-size: 34px;
+    color:var(--purple);
+    font-size: 30px;
+  }
+  .about-section, 
+  .skills-section,
+  .calculator-section{
+    background-color:var( --backgrund-color);
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .name {
@@ -129,90 +137,72 @@
   body.dark-mode .skills-section,
   body.dark-mode .calculator-section,
   body.dark-mode .cta-section {
-    background: #4c4848; 
+    background:var( --background-dark);
   }
 
   body.dark-mode .main-header,
   body.dark-mode .main-footer {
-    background: linear-gradient(to top, #373a40, #77a1b6);
+    background: var(--footer-header-dark);
   }
 
   body.dark-mode .main-nav a {
-    color: #ffffff; 
+    color: var(--white);
   }
 
   body.dark-mode .main-nav a.active {
     background-color: #5b777d; 
-    color: #000000; 
+    color:var(--black);
   }
 
   body.dark-mode p,
   body.dark-mode li,
   body.dark-mode label,
   body.dark-mode input::placeholder {
-    color: #070505;
+    color:var(--black);
   }
 
   body.dark-mode h2{
-    color: #3a1625; 
+    color: var(--white);
   }
 
   body.dark-mode .section-container,
   body.dark-mode .project-card,
   body.dark-mode .calculator-box,
   body.dark-mode .info-card {
-    background-color: #989797;
+    background-color: var( --main-box-color-dark);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-  }
-
-  body.dark-mode .main-nav ul {
-    background: none; 
-  }
-  
-  body.dark-mode .main-nav li a {
-    background: none; 
-  }
-
-  body.dark-mode .main-nav ul {
-    background-color: #3c3939;
   }
 
   body.dark-mode input,
   body.dark-mode select {
     background-color: #555555; 
-    color: #000000;
-    border: 1px solid #777;
+    color: var(--white);
+    border: 1px solid #948484;
   }
 
   body.dark-mode .name {
-    color: #ffffff;
+    color: var(--purple-white);
   }
 
   body.dark-mode .result-box {
-    background-color:  #474545;
-    color: #f0f0f0;
+    background-color: var(--purple-white);
+    color:var(--purple-white);
   }
 
-  body.dark-mode .reset-btn {
-    background-color: #474545;
-    color: #000000;
-  }
-
-  body.dark-mode .reset-btn:hover {
-    background-color: #8f3939;
-  }
-
-  body.dark-mode .calculate-btn {
-    background-color: #322c2e;
-    color: #ffffff;
-  }
-
+  body.dark-mode .reset-btn:hover,
   body.dark-mode .calculate-btn:hover {
-    background-color: #10060b;
+    background-color: var(--purple-white);
+    color:var(--black);
+  }
+
+  body.dark-mode .calculate-btn,
+  body.dark-mode .reset-btn {
+    background-color: var(--button);
+    color:var(--white);
   }
 
   body.dark-mode i {
-    color: #464444;
+    color: var(--black);
   }
 
  @media only screen and (max-width: 767px) {
@@ -239,9 +229,7 @@
     gap: 10px;
     padding:20px 0;
     text-align: center;
-    background: #89596d;
-    border-top: 1px solid #ccc;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background: var(--purple);
   }
     
   .main-nav ul.active {
@@ -254,12 +242,20 @@
     margin-top: 10px;
     border: none;
     outline: none;
-    background-color: #89596d;
-    color: white;
+    background-color:var(--purple);
+    color: var( --white);  
     font-size: 26px;
     padding: 10px 16px;
     border-radius: 8px;
     cursor: pointer;
+  }
+
+  body.dark-mode .menu-toggle{
+    background-color: var(--purple-white);
+  }
+
+  body.dark-mode .main-nav ul{
+    background: var(--purple-white);
   }
     
   .main-nav a {
@@ -272,21 +268,18 @@
   }
 
  .section-container {
-    padding: 20px;
     border-radius: 15px;
   }
 
-  .section-container h2 {
+  .section-container h2,
+  .calculator-container h2 {
     font-size: 26px;
   }
 
   .name {
-    font-size: 20px;
+    font-size: 17px;
   }
 
-  .main-footer {
-    font-size: 14px;
-  }
 }
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -300,22 +293,10 @@
     padding: 0 20px;
   }
 
-  .section-container {
-    padding: 30px;
-    font-size: 17px;
-  }
-
-  .section-container h2 {
-    font-size: 30px;
-  }
-
   .name {
-    font-size: 26px;
+    font-size: 16px;
   }
 
-  .main-footer {
-    font-size: 15px;
-  }
 }
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -325,26 +306,10 @@
     padding: 0 30px;
   }
 
- .main-nav ul {
-    gap: 70px;
-  }
-
-  .section-container {
-    padding: 40px;
-    font-size: 17.5px;
-  }
-
-  .section-container h2 {
-    font-size: 34px;
-  }
-
   .name {
-    font-size: 28px;
+    font-size: 22px;
   }
 
-  .main-footer {
-    font-size: 16px;
-  }
 }
 
   @media only screen and (min-width: 1200px) {
@@ -354,29 +319,12 @@
     padding: 0 40px;
   }
 
-  .main-nav ul {
-    gap: 80px;
-  }
-
-  .section-container {
-    padding: 48px;
-    font-size: 18px;
-  }
-
-  .section-container h2 {
-    font-size: 36px;
-  }
-
   .name {
     font-size: 30px;
   }
 
-  .main-footer {
-    font-size: 16px;
-  }
-}
    
-
+  }
 
  
 

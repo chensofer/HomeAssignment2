@@ -1,64 +1,10 @@
-  
- .skills-section {
-    padding: 60px 20px;
-    background:  #e3e6e6;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
  .section-container ul {
-    list-style: none;
-    padding: 0;
+    padding: 24px;
   }
   
  .section-container li {
-    margin-bottom: 17px;
     font-size: 17px;
   }
-  
-  @media only screen and (max-width: 767px) {
-
-    .skills-section {
-      padding: 40px 20px;
-    }
-
-    .section-container li {
-        font-size: 16px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-   
-    .skills-section {
-      padding: 50px 30px;
-    }
-
-    .section-container li {
-        font-size: 17px;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
-    .skills-section {
-      padding: 60px 40px;
-    }
-
-    .section-container li {
-        font-size: 17.5px;
-    }
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    
-    .section-container {
-      padding: 80px 60px;
-    }
-
-    .section-container li {
-        font-size: 18px;
-    }   
-  }
+ 
   
