@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Experience And Skills</title>
+    <link rel="stylesheet" href="assets/style/variables.css" />
+    <link rel="stylesheet" href="assets/style/global.css" />
+    <link rel="stylesheet" href="assets/style/skills.css" />
+    <script defer src="services/global.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Experience And Skills</title>
-    <link rel="stylesheet" href="assets/style/variables.css">
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="name">Chen's Portfolio</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="project-calculator.html">Project Calculator</a></li>
+        </ul>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </nav>
+    </header>
 
-  <link rel="stylesheet" href="assets/style/global.css" />
-  <link rel="stylesheet" href="assets/style/skills.css" />
-  <script defer src="services/global.js"></script>
-</head>
+    <main>
+      <section class="skills-section">
+        <div class="section-container">
+          <h2>🛠️<strong>Technical & Professional Skills</strong></h2>
+          <ul>
+            <li>
+              <strong>Web Development:</strong> HTML, CSS, JavaScript
+              (Basics),Responsive Design.
+            </li>
+            <li><strong>Programming Languages:</strong> C#.</li>
+            <li>
+              <strong>Database and Data Management:</strong> SQL, Database
+              Fundamentals.
+            </li>
+            <li><strong>Version Control:</strong> Git & GitHub.</li>
+            <li>
+              <strong>Business Management:</strong> Business Planning,
+              Entrepreneurship, Market Research.
+            </li>
+            <li>
+              <strong>Bookkeeping:</strong> Certified Bookkeeping Course
+              (Financial Management Principles).
+            </li>
+            <li>
+              <strong>Languages:</strong> Hebrew (Native), English (High level).
+            </li>
+          </ul>
 
-<body>
-  <header class="main-header">
-    <nav class="main-nav">
-      <div class="name">Chen's Portfolio</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html" class="active">Skills</a></li>
-        <li><a href="project-calculator.html">Project Calculator</a></li>
-      </ul>
-      <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </nav>
-  </header>
+          <h2>📋<strong>Work Experience</strong></h2>
+          <ul>
+            <li>
+              <strong>Office Manager | Tuvik Spa Water</strong>(2021–2024)<br />
+              Administrative support, customer service, and operational
+              management.
+            </li>
+            <li>
+              <strong>Bookkeeper | CPA Office Galit Sharaby</strong>
+              (2019–Present)<br />
+              Financial records, invoice management, and reporting to tax
+              authorities.
+            </li>
+          </ul>
+          <a href="assets/resume.pdf" class="resume-btn" download
+            >View Resume</a
+          >
+        </div>
+      </section>
+    </main>
 
-  <main>
-   <section class="skills-section">
-     <div class="section-container">
-      <h2>🛠️<strong>Technical & Professional Skills</strong></h2>
-    <ul>
-      <li><strong>Web Development:</strong> HTML, CSS, JavaScript (Basics), Responsive Design</li>
-      <li><strong>Programming Languages:</strong> C#</li>
-      <li><strong>Database and Data Management:</strong> SQL, Database Fundamentals</li>
-      <li><strong>Version Control:</strong> Git & GitHub</li>
-      <li><strong>Business Management:</strong> Business Planning, Entrepreneurship, Market Research</li>
-      <li><strong>Bookkeeping:</strong> Certified Bookkeeping Course (Financial Management Principles)</li>
-      <li><strong>Languages:</strong> Hebrew (Native), English (High level)</li>
-    </ul>
-
-    <h2>📋<strong>Work Experience</strong></h2>
-    <ul>
-      <li><strong>Office Manager | Tuvik Spa Water</strong> (2021–2024)<br>
-      Administrative support, customer service, and operational management.</li>
-      
-      <li><strong>Bookkeeper | CPA Office Galit Sharaby</strong> (2019–Present)<br>
-      Financial records, invoice management, and reporting to tax authorities.</li>
-    </ul>
-     </div>
-  </section>
-
-  </main>
-
-  <footer class="main-footer">
-   <p>© 2025 Chen Sofer. All rights reserved.</p>
-  </footer>
-
-</body>
+    <footer class="main-footer">
+      <p>© 2025 Chen Sofer. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

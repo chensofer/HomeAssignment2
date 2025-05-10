@@ -1,10 +1,7 @@
+.section-container ul {
+  padding: 24px;
+}
 
- .section-container ul {
-    padding: 24px;
-  }
-  
- .section-container li {
-    font-size: 17px;
-  }
- 
-  
+.section-container li {
+  font-size: 17px;
+}

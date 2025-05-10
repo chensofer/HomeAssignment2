@@ -1,84 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/style/variables.css" />
+    <link rel="stylesheet" href="assets/style/global.css" />
+    <link rel="stylesheet" href="assets/style/home.css" />
+    <script defer src="services/global.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/style/variables.css">
-  <link rel="stylesheet" href="assets/style/global.css" />
-  <link rel="stylesheet" href="assets/style/home.css" />
-  <script defer src="services/global.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-
-<body>
-  <header class="main-header">
-    <nav class="main-nav">
-     <div class="name">Chen's Portfolio</div>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="project-calculator.html">Project Calculator</a></li>
-      </ul>
-      <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero-section">
-      <div class="hero-image">
-        <img src="assets/imgs/profile.jpg" alt="Chen's profile picture" class="profile-img" />
-      </div>
-      <div class="hero-text">
-        <p class="hero-hello">Hello, I'm</p>
-        <h1>Chen Sofer</h1>
-        <p class="hero-description">Account Manager and Business Administration Student majoring in Information Systems - 2nd Year</p>
-        <a href="assets/resume.pdf" class="resume-btn" download>View Resume</a>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="cta-column contact-info">
-        <h2>Contact Info</h2>
-         <div class="info-card">
-         <ul>
-          <li>
-            <a href="tel:+972524614670">
-            <i class="fa fa-phone"></i>+972-52-461-4670
-            </a>
-          </li>
-          <li>
-            <a href="mailto:chenד@gmail.com">
-            <i class="fa fa-envelope"></i>chens@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/chen-sofer-768908364" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>LinkedIn Profile
-            </a>
-          </li>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="name">Chen's Portfolio</div>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project-calculator.html">Project Calculator</a></li>
         </ul>
-       </div>
-      </div>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </nav>
+    </header>
 
-      <div class="cta-column projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-          <img src="assets/imgs/project.jpg.png" alt="Project screenshot-burekas">
-          <a href="https://chensofer.github.io/home-assignment-1-chensofer/" target="_blank" rel="noopener noreferrer">The Perfect Bourekas</a>
-          <p> This website is all about bourekas – featuring a perfect recipe, a healthy recipe version, recommendations for top bourekas places in Israel, 
-              and a gallery of different bourekas styles.</p>
+    <main>
+      <section class="hero-section">
+        <div class="hero-image">
+          <img
+            src="assets/imgs/profile.jpg"
+            alt="Chen's profile picture"
+            class="profile-img"
+          />
         </div>
-      </div>
-    </section>
-   </main>
+        <div class="hero-text">
+          <p class="hero-hello">Hello, I'm</p>
+          <h1>Chen Sofer</h1>
+          <p class="hero-description">
+            Account Manager and Business Administration Student majoring in
+            Information Systems - 2nd Year
+          </p>
+          <a href="assets/resume.pdf" class="resume-btn" download
+            >View Resume</a
+          >
+        </div>
+      </section>
 
-  <footer class="main-footer">
-   <p>© 2025 Chen Sofer. All rights reserved.</p>
-  </footer>
+      <section class="cta-section">
+        <div class="cta-column contact-info">
+          <h2>Contact Info</h2>
+          <div class="info-card">
+            <ul>
+              <li>
+                <a href="tel:+972524614670">
+                  <i class="fa fa-phone"></i>+972-52-461-4670
+                </a>
+              </li>
+              <li>
+                <a href="mailto:chens@gmail.com">
+                  <i class="fa fa-envelope"></i>chens@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/chen-sofer-768908364"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>LinkedIn Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100001406331552"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook"></i>Facebook Profile
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-</body>
+        <div class="cta-column projects">
+          <h2>My Projects</h2>
+          <div class="project-card">
+            <img
+              src="assets/imgs/project.jpg.png"
+              alt="Project screenshot-burekas"
+            />
+            <a
+              href="https://chensofer.github.io/home-assignment-1-chensofer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >The Perfect Bourekas</a
+            >
+            <p>
+              This website is all about bourekas – featuring a perfect recipe, a
+              healthy recipe version, recommendations for top bourekas places in
+              Israel, and a gallery of different bourekas styles.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>© 2025 Chen Sofer. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

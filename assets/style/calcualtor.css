@@ -1,120 +1,111 @@
- 
-  .calculator-container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.calculator-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .calculator-box {
-    width: 100%;
-    max-width: 600px;
-    background-color:var(--main-box-color);
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  .subtext {
-    color: #555;
-    margin-bottom: 30px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  
-  .form-group label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 6px;
-    color: #333;
-  }
-  
-  .form-group select,
-  .form-group input[type="number"] {
-    margin-top: 4px;
-  }
-  
-  select,
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-  
-  .custom-design-options {
-    display: flex;
-    justify-content: left;
-    margin-top: 10px;
-    gap: 8px;
-  }
-  
-  .custom-design-options label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  .buttons button {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .reset-btn {
-    background-color: #999999;
-    color:var( --white);
-  }
-  
-  .calculate-btn {
-    background-color: var(--purple);
-    color: var( --white);
-  }
-  
-  .reset-btn:hover {
-    background-color:  #666666;
-  }
-  
-  .calculate-btn:hover {
-    background-color: #6b3d52;
-  }
-  
-  .result-box {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    color: #3a3636;
-    display: none;
-  }
- 
+.calculator-box {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--main-box-color);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0.4, 0.4, 0.4, 0.4);
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.subtext {
+  color: #272626;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: var(--black);
+}
+
+.form-group select,
+.form-group input[type="number"] {
+  margin-top: 4px;
+}
+
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.custom-design-options {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.custom-design-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn {
+  background-color: var(--button);
+  color: var(--white);
+}
+
+.calculate-btn {
+  background-color: var(--button);
+  color: var(--white);
+}
+
+.reset-btn:hover {
+  background-color: var(--hover);
+}
+
+.calculate-btn:hover {
+  background-color: var(--hover);
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #aaa9a9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #3a3636;
+  display: none;
+}

@@ -1,13 +1,16 @@
 :root {
-  --main-box-color: #ffffff;
-  --backgrund-color:#e3e6e6;
-  --footer-header:linear-gradient(to top, #ffe3f1, #c0e6f7);
-  --white:#ffffff;
-  --black:#000000;
-  --purple: #89596d;
-  --background-dark:#3d3b3b;
-  --footer-header-dark:linear-gradient(to top, #454649, #283f4a);
-  --main-box-color-dark: #636363;
+  --main-box-color: #ece7df;
+  --backgrund-color: #d8d8d8;
+  --footer-header: #b3aeac;
+  --white: #ffffff;
+  --black: #000000;
+  --purple: #54473f;
+  --background-dark: #241c16;
+  --footer-header-dark: #383029;
+  --main-box-dark: #5a504b;
   --purple-white: #b3b3b3;
-  --button:#3e3b3b;
+  --button: #484141;
+  --h-dark: #d2d3d3;
+  --hover-dark: #7d777a;
+  --hover: rgb(68, 52, 52);
 }
