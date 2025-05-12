@@ -1,12 +1,13 @@
 body,
 html {
   margin: 0;
-  padding-top: 100px;
+  padding-top: 50px;
   box-sizing: border-box;
   color: var(--black);
   font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
   background: var(--backgrund-color);
+  font-size: 19px;
 }
 
 .main-header {
@@ -23,7 +24,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
   font-size: 20px;
 }
 
@@ -84,17 +84,8 @@ html {
   transition: background-color 0.3s;
 }
 
-body.dark-mode .resume-btn {
-  background-color: var(--purple-white);
-  color: var(--black);
-}
-
 .resume-btn:hover {
   background-color: var(--hover);
-}
-
-body.dark-mode .resume-btn:hover {
-  background-color: var(--hover-dark);
 }
 
 .main-footer {
@@ -109,17 +100,12 @@ body.dark-mode .resume-btn:hover {
   margin: 0;
 }
 
-body.dark-mode .main-footer p {
-  color: var(--white);
-}
-
 .section-container {
   max-width: 800px;
   background-color: var(--main-box-color);
   padding: 5px 30px;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0.4, 0.4, 0.4, 0.4);
-  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -182,6 +168,10 @@ body.dark-mode .main-nav a.active {
   color: var(--black);
 }
 
+body.dark-mode .main-footer p {
+  color: var(--white);
+}
+
 body.dark-mode p,
 body.dark-mode li,
 body.dark-mode label,
@@ -191,6 +181,15 @@ body.dark-mode input::placeholder {
 
 body.dark-mode h2 {
   color: var(--white);
+}
+
+body.dark-mode .resume-btn {
+  background-color: var(--purple-white);
+  color: var(--black);
+}
+
+body.dark-mode .resume-btn:hover {
+  background-color: var(--hover-dark);
 }
 
 body.dark-mode .section-container,
@@ -228,8 +227,27 @@ body.dark-mode .reset-btn {
   color: var(--white);
 }
 
-body.dark-mode i {
-  color: var(--black);
+body.dark-mode .contact-info i {
+  color: var(--white);
+}
+
+body.dark-mode .project-card a {
+  color: var(--white);
+}
+
+body.dark-mode .cta-column.projects {
+  border-top: 2px solid var(--purple-white);
+}
+
+body.dark-mode .cta-column.contact-info {
+  border-right: 2px solid var(--purple-white);
+  padding-right: 30px;
+}
+
+body.dark-mode .hero-hello,
+body.dark-mode .hero-text h1,
+body.dark-mode .hero-description {
+  color: var(--white);
 }
 
 @media only screen and (max-width: 767px) {
@@ -276,14 +294,6 @@ body.dark-mode i {
     cursor: pointer;
   }
 
-  body.dark-mode .menu-toggle {
-    background-color: var(--purple-white);
-  }
-
-  body.dark-mode .main-nav ul {
-    background: #676566;
-  }
-
   .main-nav a {
     display: block;
     width: 100%;
@@ -301,8 +311,17 @@ body.dark-mode i {
   .name {
     font-size: 17px;
   }
+
   body.dark-mode {
     overflow-x: hidden;
+  }
+
+  body.dark-mode .menu-toggle {
+    background-color: var(--purple-white);
+  }
+
+  body.dark-mode .main-nav ul {
+    background: #676566;
   }
 }
 
@@ -319,6 +338,10 @@ body.dark-mode i {
   .name {
     font-size: 16px;
   }
+
+  body.dark-mode .cta-column.projects {
+    border-top: none;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -330,15 +353,22 @@ body.dark-mode i {
   .name {
     font-size: 22px;
   }
+
+  body.dark-mode .cta-column.projects {
+    border-top: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .main-nav {
-    font-size: 20px;
     padding: 0 40px;
   }
 
   .name {
     font-size: 30px;
+  }
+
+  body.dark-mode .cta-column.projects {
+    border-top: none;
   }
 }

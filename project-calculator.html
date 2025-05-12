@@ -20,7 +20,9 @@
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li>
-            <a href="project-calculator.html" class="active">Project Calculator</a>
+            <a href="project-calculator.html" class="active"
+              >Project Calculator</a
+            >
           </li>
         </ul>
         <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
@@ -46,7 +48,6 @@
                   <option value="blog">Blog</option>
                 </select>
               </div>
-
               <div class="form-group">
                 <label for="pages">Number of Pages (1-10):</label>
                 <input
@@ -58,7 +59,6 @@
                   required
                 />
               </div>
-
               <div class="form-group">
                 <label>Custom Design Needed?</label>
                 <div class="custom-design-options">
@@ -82,9 +82,7 @@
                   >
                 </div>
               </div>
-
               <div class="buttons">
-                <button type="reset" class="reset-btn" onclick="resetForm()">Reset </button>
                 <button
                   type="button"
                   class="calculate-btn"
@@ -92,9 +90,11 @@
                 >
                   Calculate Price
                 </button>
+                <button type="reset" class="reset-btn" onclick="resetForm()">
+                  Reset
+                </button>
               </div>
             </form>
-
             <div id="result" class="result-box"></div>
           </div>
         </div>
@@ -104,4 +104,5 @@
     <footer class="main-footer">
       <p>© 2025 Chen Sofer. All rights reserved.</p>
     </footer>
-  </bo
+  </body>
+</html>

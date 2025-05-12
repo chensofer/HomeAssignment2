@@ -7,8 +7,8 @@
   padding: 60px 40px;
   flex-wrap: wrap;
   border-bottom: 2px solid var(--purple-white);
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   flex-direction: row;
 }
 
@@ -39,26 +39,18 @@
 }
 
 .hero-description {
-  font-size: 18px;
   color: #1f1c1c;
   margin-bottom: 24px;
-}
-
-body.dark-mode .hero-hello,
-body.dark-mode .hero-text h1,
-body.dark-mode .hero-description {
-  color: var(--white);
 }
 
 .cta-section {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   max-width: 1200px;
   margin: auto;
   flex-wrap: wrap;
-  font-size: 17px;
   background: var(--backgrund-color);
   align-items: flex-start;
   flex-direction: row;
@@ -72,12 +64,8 @@ body.dark-mode .hero-description {
 
 .cta-column.contact-info {
   border-right: 2px solid var(--black);
-  min-height: 550px;
   padding-right: 30px;
-}
-
-body.dark-mode .cta-column.contact-info {
-  border-right: 2px solid var(--purple-white);
+  position: relative;
 }
 
 .cta-column.projects {
@@ -89,6 +77,8 @@ body.dark-mode .cta-column.contact-info {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0.4, 0.4, 0.4, 0.4);
   margin-top: 20px;
+  background-color: var(--main-box-color);
+  max-width: 300px;
 }
 
 .contact-info li {
@@ -105,12 +95,7 @@ body.dark-mode .cta-column.contact-info {
 .contact-info i {
   margin-right: 10px;
   color: var(--purple);
-  font-size: 18px;
   align-items: center;
-}
-
-body.dark-mode .contact-info i {
-  color: var(--white);
 }
 
 .contact-info a:hover {
@@ -128,6 +113,7 @@ body.dark-mode .contact-info i {
   box-shadow: 0 4px 10px rgba(0.4, 0.4, 0.4, 0.4);
   max-width: 600px;
   margin: 0 auto;
+  background-color: var(--main-box-color);
 }
 
 .project-card img {
@@ -141,20 +127,14 @@ body.dark-mode .contact-info i {
 
 .project-card p {
   margin: 10px 0;
-  font-size: 16px;
 }
 
 .project-card a {
   display: inline-block;
   margin-top: 10px;
   font-weight: bold;
-  font-size: 20px;
   text-decoration: none;
   color: rgb(61, 53, 53);
-}
-
-body.dark-mode .project-card a {
-  color: var(--white);
 }
 
 .project-card a:hover {
@@ -189,16 +169,7 @@ body.dark-mode .project-card a {
     margin-top: 20px;
   }
 
-  body.dark-mode .cta-column.projects {
-    border-top: 2px solid var(--purple-white);
-  }
   .cta-column.contact-info {
-    min-height: auto;
-    border-right: none;
-    padding-right: 0;
-  }
-
-  body.dark-mode .cta-column.contact-info {
     min-height: auto;
     border-right: none;
     padding-right: 0;
