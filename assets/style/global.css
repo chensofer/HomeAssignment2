@@ -280,6 +280,10 @@ body.dark-mode .hero-description {
     display: flex;
   }
 
+  body {
+    font-size: 17px; 
+  }
+
   .menu-toggle {
     display: block;
     align-self: center;
